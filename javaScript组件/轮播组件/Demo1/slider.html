@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="css/demo.css">
+</head>
+<body>
+    <div class="slider" id="sliderWrap">
+        <span class="closebtn" id='closeBtn'>x</span>
+        <span class="prevbtn" id='prevBtn'>&lt;</span>
+        <span class="nextbtn" id='nextBtn'>&gt;</span>
+        <ul class="imglsit" id="ul">
+            <li class="a"><img src=""></li>
+            <li class="b"><img src=""></li>
+            <li class="c"><img src=""></li>
+        </ul>
+    </div>
+    <script src="js/jq.js"></script>
+    <script src='js/slider.js'></script>
+    <script type="text/javascript">
+       var obj=new Slider({
+          'wrap':'sliderWrap',      
+          'closeBtn':'closeBtn',
+          'prevBtn':'prevBtn',
+          'nextBtn':'nextBtn',
+          'ul':'ul',
+          'timer':'auto'
+
+        })
+
+    </script>
+</body>
+</html>

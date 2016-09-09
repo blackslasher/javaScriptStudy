@@ -1,0 +1,32 @@
+在windows下安装nodejs
+
+
+1.下载git 
+
+https://git-scm.com/
+
+
+2.下载nodejs开发环境
+  
+  
+https://nodejs.org/en/
+
+
+3.在git bash写node -v 和npm -v，若出现版本号，则nodejs安装成功
+（若没出现，需要去配置全局环境变量，我的电脑-》右键-》属性-》高级系统设置-》高级-》环境变量-》系统变量-》path添加路径即可）
+
+
+4.window安装npm
+
+在git bash中git clone --recursive git://github.com/isaacs/npm.git
+
+cd npm
+
+node cli.js install npm -gf
+
+
+成功之后输入
+
+
+npm install underscore会返回underscore@1.2.2等信息
+

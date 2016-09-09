@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="style/demo.css">
+</head>
+<body>
+
+	<div class="m-slider" id="m-slider">
+		<span class='u-btn u-btn-prev z-hover'>&lt;</span>
+		<span class='u-btn u-btn-next z-hover'>&gt;</span>
+		<ul class='picList' id="J_picList">
+			<li><a href="#" target="_blank" title="ad1"><img src="images/ad1.jpg" width="1000" height="400" alt="111111"></a></li>
+			<li><a href="#" target="_blank" title="ad2"><img src="images/ad2.jpg" width="1000" height="400" alt="222222"></a></li>
+			<li><a href="#" target="_blank" title="ad3"><img src="images/ad3.jpg" width="1000" height="400" alt="3333333"></a></li>
+		</ul>
+		<ul class='btnList'>
+			<li class="z-cur">1</li>
+			<li>2</li>
+			<li>3</li>
+		</ul>
+	</div>
+
+
+	<script src="js/jquery-2.0.0.min.js"></script>
+	<script src="js/slider.js"></script>
+	<script>
+		var options={
+			'wrap':'m-slider',                 //String Wrap  class
+			'picList':'picList',              //string  picList class
+			'width':1000,                      // number  picListItem width
+			'height':200,                      // number  picListItem height
+			'prevBtn':'u-btn-prev',              //string prevBtn class
+			'nextBtn':'u-btn-next',              //string nextBtn class
+			'btnList':'btnList',             //string btnList class
+			'autoPlay':true,                 //boolean true is autoplay false not play
+			'autoTime':3000                  //number autoPlay interval
+		};
+		/*
+		 *  @params String Wrap  class
+		 *  @params String picList class
+		 *  @params Number picListItem width
+		 *  @params Number picList height
+		 *  @params String prevBtn class
+		 *  @params String nextBtn class
+		 *  @params String btnList class
+		 *  @params Boolean true is autoplay false not play
+		 *  @params Number autoPlay interval
+		 *
+		 *
+		 * */
+		var obj=new Slider(options);
+	</script>
+</body>
+</html>

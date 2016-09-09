@@ -1,0 +1,65 @@
+
+如何计算浏览器距离显示器的距离
+
+
+var left=typeof window.screenLeft =='number'?window.screenLeft:window.screenX;
+var top=typeof window.screenTop =='number'?window.screenTop:window.screenY;
+
+
+
+
+
+===================================
+
+
+如何计算浏览器的整个大小
+
+window.outerWidth
+window.outHeight
+
+
+
+================================
+
+
+如何计算浏览器的视口大小（包含滚动条）
+
+
+window.innerWidth
+window.innerHeight
+
+
+
+
+===============================
+
+
+
+
+如何计算浏览器的视口大小（移动端IE兼容方案）
+
+
+在移动IE不支持window.innerWidth，用document.documentElement.clientWidth获得相同的属性值
+
+var pageWidth=window.innerWidth;
+var pageHeight=window.innerHeight;
+
+if(typeof pageWidth!='number'){
+    if(document.compatMode=='CSS1Compat'){
+        pageWidth=document.documentElement.clientWidth;
+        pageHeight=document.documentElement.clientHeight;
+    }else{
+        pageWidth=document.body.clientWidth;
+        pageHeight=document.body.clientHeight;
+    }
+}
+
+
+==================================
+
+
+window.innerWidth 和document.documentElement.clientWidth不同
+
+http://stackoverflow.com/questions/6942785/window-innerwidth-vs-document-documentelement-clientwidth
+
+

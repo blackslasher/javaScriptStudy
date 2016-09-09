@@ -1,0 +1,12 @@
+\*{margin:0;padding:0;}
+li{list-style:none;}
+.m-slider{position:relative;margin:0 auto;overflow:hidden;}
+.m-slider .u-btn{position:absolute;top:40%;width:40px;height:40px;background:#000;opacity:0.3;filter:alpha(opacity=30);z-index:3;color:#fff;text-align:center;line-height:40px;font-size:25px;cursor:pointer;}
+.m-slider .z-hover{opacity:0.9;filter:alpha(opacity=90);}
+.m-slider .u-btn-prev{left:20px;}
+.m-slider .u-btn-next{right:20px;}
+.m-slider .picList{position:absolute;z-index:1;left:0;top:0;}
+.m-slider .picList li{float:left;}
+.m-slider .btnList{position:absolute;z-index:3;left:43%;bottom:20px;text-indent:-9999px;}
+.m-slider .btnList li{float:left;margin-left:20px;width:10px;height:10px;border-radius:50%;background:#fff;}
+.m-slider .btnList .z-cur{background:red;}
