@@ -1,0 +1,22 @@
+
+
+在使用shell命令git remote add origin git@github.com:YourName/YourRepositroy.git
+失败出现fatal: remote origin already exists.
+
+
+解决方法:
+
+First do a:
+
+git remote rm origin
+then
+
+git remote add origin https://github.com/your_user/your_app.git
+
+
+================================================================
+
+
+
+
+
