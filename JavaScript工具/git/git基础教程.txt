@@ -1,1 +1,13 @@
 http://blog.csdn.net/u010520912/article/details/18993001
+
+
+
+
+0  先在github上创建一个项目，不用readme
+1  git clone https://github.com/blackslasher/javaScriptStudy.git
+2  在clone下来的文件夹内git init
+3  git add .
+4  git commit -m'myCommit'
+5  git remote add origin git@githubxxxxxx
+6  git remote rm origin
+7  git push -u origin master
